@@ -1,15 +1,29 @@
 public class ArraySample {
-    public static int sum(int[] array){
-        int sum = 0;
-        for(int i = 0; i < array.length; i++){
-            sum += array[i];
-        }
-        return sum;
-    }
+    public static void main(String[] args) {
+        int[] array1 = {1, -2, 3, 4, -5};
+        int result = positive(array1);
+        System.out.println(result);
 
-    public static void main(String[] args){
-        int[] array = {1, 2, 3, 4, 5};
-        int sum = sum(array);
-        System.out.println(sum);
+        String[] array2 = {"Information", "Networking", "for", "Innovation", "And", "Design"};
+        printOdd(array2);
+    }
+		
+    public static int positive(int[] array) {
+        int result = 0;
+        for(int i = 0; i < array.length; i++){
+            if(array[i] > 0){
+                result += array[i];
+            }
+        }
+        return result;
+    }
+    
+    public static void printOdd(String[] array) {
+
+		for(int i = 0; i< array.length; i++){
+            if(i % 2 == 0){
+                System.out.println(array[i]);
+            }
+        }
     }
 }
