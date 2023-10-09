@@ -18,7 +18,7 @@ public class Circle {
         return Math.PI * 2 * radius;
     }
 
-    public double getDistance(){
-        
+    public double getDistance(Circle other){
+        return Math.sqrt(Math.pow(this.pointX - other.pointX, 2) + Math.pow(this.pointY - other.pointY,2));
     }
 }
