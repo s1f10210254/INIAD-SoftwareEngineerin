@@ -21,7 +21,7 @@ public class Book {
         return name;
     }
 
-    public Author geAuthor(){
+    public Author getAuthor(){
         return author;
     }
 
@@ -33,5 +33,13 @@ public class Book {
         this.price = price;
     }
 
+    public String toString(){
+        return "Book [name=" + name + ", author=" + author.toString() + ", price=" + price + "]";
+    }
 
+    public static void main(String[] args) {
+        Author author = new Author("alice", "alice@example.com");
+        Book book = new Book("Java Book", author, 1500);
+        System.out.println(book.toString());
+    }
 }
