@@ -14,5 +14,9 @@ public class Main {
         }
 
         System.out.printf("%d stduents in total.\n", Student.cnt);
+
+        if(Student.older(student, student2)) {
+            System.out.printf("%s is older than %s.\n", student.name, student2.name);
+        }
     }
 }

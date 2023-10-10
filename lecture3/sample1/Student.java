@@ -22,4 +22,9 @@ public class Student {
     boolean belongsToCourse(int credit) {
         return (this.grade >= 2) && (credit >= 22);
     }
+
+    //Add a static method.
+    static boolean older(Student a, Student b) {
+        return a.grade > b.grade;
+    }
 }
