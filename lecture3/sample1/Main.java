@@ -9,7 +9,7 @@ public class Main {
         if(student.belongsToCourse()){
             System.out.println("Belongs to a couse");
         }
-        if(student.belongsToCourse(20)) {
+        if(student.belongsToCourse(23)) {
             System.out.println("Belongs to a course.");
         }
     }
