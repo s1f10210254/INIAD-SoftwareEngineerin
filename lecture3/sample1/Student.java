@@ -1,9 +1,12 @@
 public class Student {
 
-
+    // Instance field
     String name;
     int grade;
+
+    // Static field
     static int cnt = 0;
+    
     // constructor
     Student(String name, int grade){
         this.name = name;
@@ -23,7 +26,7 @@ public class Student {
         return (this.grade >= 2) && (credit >= 22);
     }
 
-    //Add a static method.
+    //static method.
     static boolean older(Student a, Student b) {
         return a.grade > b.grade;
     }
