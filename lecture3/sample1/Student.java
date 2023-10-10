@@ -1,12 +1,16 @@
 public class Student {
 
+    // constants
+    final static int MIN_COURSE_GRADE = 2;
+    final static int MIN_COURSE_CREDIT = 22;
+
     // Instance field
-    String name;
+    final String name;
     int grade;
 
     // Static field
     static int cnt = 0;
-    
+
     // constructor
     Student(String name, int grade){
         this.name = name;
@@ -19,11 +23,11 @@ public class Student {
 
     // instance methods
     boolean belongsToCourse() {
-        return this.grade >= 2;
+        return this.grade >= MIN_COURSE_CREDIT;
     }
 
     boolean belongsToCourse(int credit) {
-        return (this.grade >= 2) && (credit >= 22);
+        return (this.grade >= MIN_COURSE_GRADE) && (credit >= MIN_COURSE_CREDIT);
     }
 
     //static method.
