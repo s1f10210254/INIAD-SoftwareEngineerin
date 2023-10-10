@@ -8,4 +8,8 @@ public class Student {
     Student(String name){
         this(name, 1);
     }
+
+    boolean belongsToCourse() {
+        return this.grade >= 2;
+    }
 }
