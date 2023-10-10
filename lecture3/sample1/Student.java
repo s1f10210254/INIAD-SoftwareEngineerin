@@ -6,7 +6,6 @@ public class Student {
         this.grade = grade;
     }
     Student(String name){
-        this.name  = name;
-        this.grade = 1;
+        this(name, 1);
     }
 }
