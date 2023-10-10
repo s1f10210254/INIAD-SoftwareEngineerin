@@ -1,14 +1,18 @@
 public class Time {
-    // int hour;
-    // int minute;
-    // int second;
+    int hour;
+    int minute;
+    int second;
 
-    // public Time(int hour, int minute, int second){
-    //     this.hour = hour;
-    //     this.minute = minute;
-    //     this.second = second;
-    // }
+    public Time(int hour, int minute, int second){
+        this.hour = hour;
+        this.minute = minute;
+        this.second = second;
+    }
 
+
+    public String toString() {
+        return hour + ":" + minute + ":" + second;
+    }
     // public int getHour(){
     //     return hour;
     // }
