@@ -5,4 +5,8 @@ public class Student {
         this.name = name;
         this.grade = grade;
     }
+    Student(String name){
+        this.name  = name;
+        this.grade = 1;
+    }
 }
