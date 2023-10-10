@@ -10,4 +10,10 @@ public class Quiz {
         }
         return result;
     }
+    // public static String appenAll(String[] args){
+    //     StringBuffer a = new StringBuffer();
+    //     for(char s; args){
+            
+    //     }
+    // }
 }
