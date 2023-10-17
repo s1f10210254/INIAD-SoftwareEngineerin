@@ -2,9 +2,9 @@ public class Main {
     public static void main(String[] args) {
         // Constractor and instance field
         Student student = new Student("Taro", 3);
-        System.out.printf("%s %d\n", student.name, student.grade );
+        System.out.printf("%s %d\n", student.getName(), student.getGrade() );
         Student student2 = new Student("Jiro");
-        System.out.printf("%s %d\n", student2.name, student2.grade);
+        System.out.printf("%s %d\n", student2.getName(), student2.getGrade());
 
         
         if(student.belongsToCourse()){
@@ -17,11 +17,11 @@ public class Main {
         }
 
         //Static field
-        System.out.printf("%d stduents in total.\n", Student.cnt);
+        System.out.printf("%d stduents in total.\n", Student.getCnt());
 
         //Static method
         if(Student.older(student, student2)) {
-            System.out.printf("%s is older than %s.\n", student.name, student2.name);
+            System.out.printf("%s is older than %s.\n", student.getName(), student2.getName());
         }
     }
 }

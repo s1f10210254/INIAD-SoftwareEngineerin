@@ -1,37 +1,51 @@
 public class Student {
 
     // constants
-    final static int MIN_COURSE_GRADE = 2;
-    final static int MIN_COURSE_CREDIT = 22;
+    public final static int MIN_COURSE_GRADE = 2;
+    public final static int MIN_COURSE_CREDIT = 22;
 
     // Instance field
-    final String name;
-    int grade;
+    private final String name;
+    private int grade;
 
     // Static field
-    static int cnt = 0;
+    private static int cnt = 0;
 
     // constructor
-    Student(String name, int grade){
+    public Student(String name, int grade){
         this.name = name;
         this.grade = grade;
         cnt ++;
     }
-    Student(String name){
+    public Student(String name){
         this(name, 1);
     }
 
     // instance methods
-    boolean belongsToCourse() {
+    public boolean belongsToCourse() {
         return this.grade >= MIN_COURSE_CREDIT;
     }
 
-    boolean belongsToCourse(int credit) {
+    public boolean belongsToCourse(int credit) {
         return (this.grade >= MIN_COURSE_GRADE) && (credit >= MIN_COURSE_CREDIT);
     }
 
     //static method.
-    static boolean older(Student a, Student b) {
+    public static boolean older(Student a, Student b) {
         return a.grade > b.grade;
+    }
+
+    //Add following methods
+    public String getName() {
+        return name;
+    }
+    public int getGrade() {
+        return grade;
+    }
+    public void promoteGrade() {
+        grade++;
+    }
+    public static int getCnt() {
+        return cnt;
     }
 }
