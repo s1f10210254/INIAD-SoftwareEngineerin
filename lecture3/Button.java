@@ -1,6 +1,6 @@
 public class Button {
     // ボタンの名称を表すString型のインスタンス・フィールド
-    public String label;
+    public final String label;
     // ボタンが押されているか否かを表すboolean型のインスタンス・フィールド
     public boolean pressed;
 
