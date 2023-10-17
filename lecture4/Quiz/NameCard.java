@@ -1,17 +1,19 @@
 public class NameCard{
-    final String firstName;
-    final String familyName;
-    static int count = 0;
-    int id;
+    // インスタンス・フィールド
+    private final String firstName;
+    private final String familyName;
+    private final int id;
 
-    NameCard(String firstName, String familyName){
+    private static int count = 1;
+
+    //コンストラクタ
+    public NameCard(String firstName, String familyName){
         this.firstName = firstName;
         this.familyName = familyName;
-        count++;
-        this.id = count;
+        this.id = count++;
     }
 
-    String getLabel(){
-        return "No. " + id + ": " + firstName + " " + familyName;
+    public String getLabel(){
+        return String.format("No. %d: %s %s", id, firstName, familyName);
     }
 }

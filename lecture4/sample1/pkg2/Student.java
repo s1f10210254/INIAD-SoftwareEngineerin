@@ -1,3 +1,5 @@
+package sample1.pkg2;
+
 public class Student {
 
     // constants

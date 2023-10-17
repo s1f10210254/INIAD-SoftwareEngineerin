@@ -1,3 +1,7 @@
+package sample1.pkg1;
+
+import sample1.pkg2.Student;
+
 public class Main {
     public static void main(String[] args) {
         // Constractor and instance field
