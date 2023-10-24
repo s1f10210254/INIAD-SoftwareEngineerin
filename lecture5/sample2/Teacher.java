@@ -1,4 +1,3 @@
-//Teacher
 package sample2;
 
 class Teacher extends Member {
@@ -9,14 +8,17 @@ class Teacher extends Member {
         this.title = title;
     }
 
-    String getTeacherProfile() {
+    @Override
+    String getProfile() {
         StringBuffer sb = new StringBuffer();
         sb.append("----- Teacher -----\n");
-        sb.append("ID: ").append(id).append("\n");
-        sb.append("Name: ").append(name).append("\n");
+        sb.append(super.getProfile()); //MemberクラスのgetProfileを呼び出す
         sb.append("Title: ").append(title).append("\n");
-        String email = getEmail();
-        sb.append("email: ").append(email).append("\n");
         return sb.toString();
+   }
+
+   @Override
+   String getEmail(){
+    return name + DOMAIN;
    }
 }
