@@ -7,10 +7,10 @@ import sample1.pkg2.Teacher;
 public class Main {
     public static void main(String[] args) {
         Member st = new Student("1234", "Taro", 1);
-        // Memver型でも、studentクラスのgetProfile()が呼ばれる
+        // Member型でも、StudentクラスのgetProfile()が呼ばれる
         System.out.printf(st.getProfile());
         Member t = new Teacher("1000", "Inoue", "Professor");
-        // Member型でも、teacherクラスのgetProfile()が呼ばれる
-        System.out.printf(t.getProfile());
+        // Member型でも、TeacherクラスのgetProfile()が呼ばれる
+        System.out.println(t.getProfile());
     }
 }
