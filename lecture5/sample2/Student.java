@@ -8,6 +8,7 @@ public class Student extends Member{
         this.grade = grade;
     }
 
+    @Override
     String getProfile() {
         StringBuffer sb = new StringBuffer();
         sb.append("----- Student -----\n");

@@ -8,6 +8,7 @@ class Teacher extends Member {
         this.title = title;
     }
 
+    @Override
     String getProfile() {
         StringBuffer sb = new StringBuffer();
         sb.append("----- Teacher -----\n");
