@@ -1,4 +1,6 @@
-package assignment1;
+package assignment1.figures;
+
+import assignment1.base.Figure;
 
 public class Pyramid extends Figure {
     public Pyramid(int height) {

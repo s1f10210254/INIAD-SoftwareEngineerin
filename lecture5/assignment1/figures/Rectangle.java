@@ -1,7 +1,10 @@
-package assignment1;
+package assignment1.figures;
+
+import assignment1.base.Figure;
 
 public class Rectangle extends Figure {
-    public final int width;
+    // サブクラスのみからアクセス可能なフィールドにするために、protectedを使用
+    protected final int width;
 
     public Rectangle(int height, int width) {
         super(height);
