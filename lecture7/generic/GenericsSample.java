@@ -1,4 +1,4 @@
-package sample1;
+package generic;
 
 public class GenericsSample<T> {
     private T first;
