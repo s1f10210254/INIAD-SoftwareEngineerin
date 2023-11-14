@@ -15,6 +15,7 @@ public class NameCard {
         this.id = cnt;
     }
 
+    //インスタンス・メソッド
     String getLabel(){
         return String.format("No. %d: %s %s", id, firstName, famiyName);
     }
