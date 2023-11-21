@@ -19,6 +19,11 @@ public class Teacher extends Member{
          return sb.toString();
     }
 
+    @Override
+    public boolean canReserveRoom() {
+        return true;
+    }
+
     // スーパークラスに合わせて protected
     @Override
     protected String getEmail() {

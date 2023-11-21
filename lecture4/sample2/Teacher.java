@@ -1,4 +1,3 @@
-//Teacher
 package sample2;
 
 class Teacher extends Member {
