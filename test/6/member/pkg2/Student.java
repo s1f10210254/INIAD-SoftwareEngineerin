@@ -1,7 +1,7 @@
 package member.pkg2;
 import member.pkg1.Member;;
 public class Student extends Member{
-    int grade;
+    protected int grade;
 
     //サブクラスからコンストラクタの継承
     public Student(String id, String name, int grade){
